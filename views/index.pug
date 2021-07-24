@@ -1,0 +1,88 @@
+doctype html
+html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Online Food Delivery 
+  link(rel='stylesheet' href='/static/css/style.css')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Lobster&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap' rel='stylesheet')
+  link(rel='stylesheet' media='screen and (max-width:1000px)' href='/static/css/phone.css')
+nav#navbar
+  #logo
+    img(src='/static/lg.jpg' alt='myonlinemeal.com')
+  ul
+    li.item
+      a(href='/') Home
+    li.item
+      a(href='#services-container') Services
+    li.item
+      a(href='#client-section') Clients
+    li.item
+      a(href='#contact') Contact
+section#home
+  h1.h-primary Welcome to my online meal
+  p
+    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus pariatur officia nam! Voluptas doloremque beatae
+  p Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+section#services-container
+  h1.h-primary.center
+    | Our services
+  #services
+    .box
+      img(src='/static/img/pizza.jpg' alt='')
+      h2.h-secondary.center Food Ordering
+      p.center
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non autem veritatis suscipit ipsam error officiis dolorem, dolorum doloremque corporis amet! Laboriosam aperiam dolor laudantium voluptatem repudiandae iure, numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid blanditiis quasi eligendi assumenda expedita minima, optio ipsum sequi placeat.
+    .box
+      img(src='/static/img/delivery.png' alt='')
+      h2.h-secondary.center Food catering
+      p.center
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non autem veritatis suscipit ipsam error officiis dolorem, dolorum doloremque corporis amet! Laboriosam aperiam dolor laudantium voluptatem repudiandae iure, numquam aut.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores ea, rerum velit id aut obcaecati assumenda ipsam tempore incidunt odio.
+    .box
+      img(src='/static/food.jpg' alt='')
+      h2.h-secondary.center Bulk Ordering
+      p.center
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non autem veritatis suscipit ipsam error officiis dolorem, dolorum doloremque corporis amet! Laboriosam aperiam dolor laudantium voluptatem repudiandae iure, numquam aut.  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium soluta officiis alias quia excepturi necessitatibus deleniti praesentium obcaecati odio ipsum.
+section#client-section
+  h1.h-primary.center Clients
+  #clients
+    .client-item
+      img(src='/static/img/log1.jpg' alt='our client')
+    .client-item
+      img(src='/static/img/lo2.jpg' alt='our client')
+    .client-item
+      img(src='/static/img/log5.png' alt='our client')
+    .client-item
+      img(src='/static/img/amazlog.jpg' alt='our client')
+    .client-item
+      img(src='/static/img/log3.png' alt='our client')
+section#contact
+  h1.h-pri.center Contact 
+  h3.center Mention what orders you want in the message box ,we will delver you within 30 mins of your details submission.. 
+  #contact-box 
+    form(action='/' method="post" )
+      .form-group
+        label(for='name') Name : 
+        br
+        input#name(type='text' name='name' placeholder='Enter your name')
+      .form-group
+        label(for='phone') Phone : 
+        br
+        input#phone(type='number' name='phone' placeholder='Enter your phone number')
+      .form-group
+        label(for='email')  Email : 
+        br
+        input#email(type='email' name='email' placeholder='Enter your Email')
+      .form-group
+        label(for='message')  Message: 
+        br
+        textarea#message(name='message' cols='30' rows='10')
+      .form-group 
+        button#btn Submit 
+footer
+  .center
+    | Copyright &copy; www.myonlinemeal.com. All rights resserved!
